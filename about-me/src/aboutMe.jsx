@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container, Row, Col, Card, Badge, Button } from 'react-bootstrap';
+import { useState } from 'react';
 
 const AboutMe = () => {
   const skills = [
@@ -10,7 +11,10 @@ const AboutMe = () => {
     'Java', 'Svelte'
   ];
 
-  return (
+
+  
+
+return (
     <Container className="my-5" id="about">
       <Row className="justify-content-center fade-in-up ">
         <Col lg={10}>
@@ -18,6 +22,7 @@ const AboutMe = () => {
             <Col>
               <h2 className="display-5 fw-bold section-title gradient-text">O mnie</h2>
               <p className="lead">Junior Frontend Developer | Absolwent Technikum Programistycznego</p>
+             
             </Col>
           </Row>
 
@@ -92,7 +97,7 @@ const AboutMe = () => {
                       <Col sm={6}>
                         <div className="d-flex justify-content-between align-items-center mb-2 p-2 custom-card text-muted">
                           <span>🇵🇱 Polski</span>
-                          <Badge bg="success" style={{color:'black'}}>Native</Badge>
+                          <Badge bg="info text-muted" >Native</Badge>
                         </div>
                       </Col>
                       <Col sm={6}>
@@ -111,6 +116,6 @@ const AboutMe = () => {
       </Row>
     </Container>
   );
-};
 
+};
 export default AboutMe;
