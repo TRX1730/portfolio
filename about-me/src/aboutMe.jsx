@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container, Row, Col, Card, Badge, Button } from 'react-bootstrap';
 import { useState } from 'react';
+import certficate from "./certyfikat.jpg";
 
 const AboutMe = () => {
   const skills = [
@@ -107,6 +108,24 @@ return (
                         </div>
                       </Col>
                     </Row>
+                  </div>
+                  <div style={{marginTop: "10px"}}>
+                     <h5 className="mb-3 gradient-text"><i class="bi bi-star-fill"></i> Osiągnięcia</h5>
+                      <Row>
+                        <Col>
+                      <div className="d-flex justify-content-between align-items-center mb-2 p-2 custom-card text-muted"  >
+                       
+                          <span onClick={() => window.open(certficate, "_blank")} style={{ cursor: "pointer" }} > Finalista HackYeah 2024</span>
+                         
+                      </div>
+                      </Col>
+                      <Col>
+                      <div className="d-flex justify-content-between align-items-center mb-2 p-2 custom-card text-muted"  >
+                           <span>Zdane egzaminy INF. 03 oraz INF. 04</span>
+                    </div>
+                    </Col>
+                    </Row>
+
                   </div>
                 </Card.Body>
               </Card>
